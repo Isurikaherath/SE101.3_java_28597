@@ -1,0 +1,29 @@
+Output :
+9 6
+Class SuperB
+▪ This class represents a superclass containing four methods: setIt, increase, 
+triple, and returnIt. 
+▪ The instance variable x's value is set with the setIt method. 
+▪ The increase method increases the value of x by 1. 
+▪ The value of x is multiplied by three using the triple method. ▪ The returnIt 
+method returns the current value of x.
+class SubC extends SuperB 
+▪ In order to become a subclass of SuperB, this class extends the SuperB class. 
+▪ Instead of multiplying x by 3, it adds 3 to the x value instead of using the 
+triple function from the superclass. 
+▪ Additionally, it adds a new method called quadruple, which multiplies the 
+value of x by 4.
+public class TestInheritance
+▪ This class has the main method where the behavior of inheritance is tested. 
+▪ In the beginning, it creates a SuperB instance called b. 
+▪ Using the setIt method, it initializes b to 2 in this case. 
+▪ Following that, it increases b's value by 1, making x equal to 3. 
+▪ The triple method is then used to triple the value of b, so x becomes 9. 
+▪ Finally, using the returnIt method, it prints the current value of b. then it 
+makes a SubC instance with the name c. 
+▪ Using the setIt method, it initializes c to the value 2. 
+▪ Then it uses the increase method to increase the C value by 1, so x becomes 
+. 
+▪ Then, using the triple method, which is overridden in the SubC class, it 
+triples the value of c, so x becomes 6. 
+▪ Using the returned method, it prints the current value of C
