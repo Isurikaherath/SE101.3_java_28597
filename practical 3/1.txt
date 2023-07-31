@@ -1,0 +1,71 @@
+package com.mycompany.testencap;public class EncapCls {
+ private String empname;
+ private int empage;
+ private double empsalary;
+ 
+ public void setempname(String empname){
+  this.empname=empname;
+ }
+ public void setempage(int empage){
+ 
+  this.empage=empage;
+ }
+ public void setempsalary(double empsalary){
+  this.empsalary=empsalary;
+ }
+ public String getempname(){
+  return empname;
+ }
+ public int getempage(){
+  return empage;
+ }
+ public double getempsalary(){
+  return empsalary;
+ }
+}
+
+
+package com.mycompany.testencap;
+public class TestEncap {
+ 
+  public static void main(String[] args) {
+    EncapCls e1=new EncapCls();
+    e1.setempname("Mr.Perera");
+    e1.setempage(56);
+    e1.setempsalary(340000.50);
+    System.out.println("Employee name is "+e1.getempname());
+    System.out.println("Employee Age is "+e1.getempage());
+    System.out.println("Employee salary is "+e1.getempsalary());
+ }
+
+
+package com.mycompany.testencap;
+public class EncapCls {
+ private String empname;
+ private int empage;
+ private double empsalary;
+ public EncapCls(String empname, int empage, double empsalary) {
+  this.empname = empname;
+  this.empage = empage;
+  this.empsalary = empsalary;}
+ 
+ public String getempname(){
+  return empname;
+ }
+ public int getempage(){
+  return empage;
+ }
+ public double getempsalary(){
+  return empsalary;
+ }
+}
+
+package com.mycompany.testencap;
+public class TestEncap {
+public static void main(String[] args) {
+ EncapCls e1=new EncapCls("Mr.Perera",56,340000.50);
+ 
+ System.out.println("Employee name is "+e1.getempname());
+ System.out.println("Employee Age is "+e1.getempage());
+ System.out.println("Employee salary is "+e1.getempsalary());
+ }

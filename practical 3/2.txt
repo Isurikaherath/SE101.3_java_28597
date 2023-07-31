@@ -1,0 +1,46 @@
+package com.mycompany.testencap;
+public class EncapCls {
+ private String empname;
+ private double empsalary;
+ private double bonus;
+ 
+ public void setempname(String empname){
+  this.empname=empname;
+ }
+ 
+
+ public void setempsalary(double empsalary){
+  this.empsalary=empsalary;
+ }
+ public String getempname(){
+  return empname;
+ }
+ 
+ public double getempsalary(){
+  return empsalary;
+ }
+ public EncapCls(double bonus){
+  this.bonus=bonus;
+ 
+ }
+ public double getbonus(){
+  return bonus;
+ }
+ public double calcbonusamount(){
+  return bonus+empsalary;
+ }
+ 
+}
+
+
+package com.mycompany.testencap;
+public class TestEncap {
+ public static void main(String[] args) {
+  EncapCls e1=new EncapCls(1000);
+  e1.setempname("bogdan");
+  e1.setempsalary(5000);
+  System.out.println("Employee Name: " + e1.getempname());
+  System.out.println("Basic Salary: " + e1.getempsalary());
+  System.out.println("Bonus: " +e1.getbonus());
+  System.out.println("Bonus Amount: " + e1.calcbonusamount());
+ }
