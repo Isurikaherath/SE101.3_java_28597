@@ -1,0 +1,26 @@
+abstract class container {
+ 
+ abstract double volume();
+}
+public class cylindricalcontainer extends container {
+ 
+ private double height,radius;
+ @Override
+ public double volume(){
+ double PI=3.14159;
+ return PI*radius*radius*height;
+}
+cylindricalcontainer(double height,double radius){
+ this.height = height;
+ this.radius = radius;
+}
+}
+
+public class App {
+ public static void main(String[] args) throws Exception {
+ 
+ cylindricalcontainer c = new cylindricalcontainer(14,7);
+ c.volume();
+ System.out.println("Volume is: "+c.volume());
+ }
+}
